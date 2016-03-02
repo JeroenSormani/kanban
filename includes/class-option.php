@@ -49,13 +49,11 @@ class Kanban_Option extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function replace ($data)
 	{
 		return self::_replace($data);
 	}
-
 
 
 	static function update ($key, $value)
@@ -82,7 +80,6 @@ class Kanban_Option extends Kanban_Db
 	}
 
 
-
 	// define the db schema
 	static function db_table ()
 	{
@@ -104,7 +101,6 @@ class Kanban_Option extends Kanban_Db
 
 		return apply_filters('kanban_option_get_defaults_return', self::$defaults);
 	}
-
 
 
 	static function get_all_raw ()
@@ -140,7 +136,6 @@ class Kanban_Option extends Kanban_Db
 	}
 
 
-
 	static function get_all ($sql = NULL)
 	{
 		if ( empty(self::$options) )
@@ -165,7 +160,6 @@ class Kanban_Option extends Kanban_Db
 	}
 
 
-
 	static function get_option($name)
 	{
 		$options = self::get_all();
@@ -177,7 +171,6 @@ class Kanban_Option extends Kanban_Db
 
 		return $options[$name];
 	}
-
 
 
 	static function get_option_raw ($option_name)
@@ -193,7 +186,6 @@ class Kanban_Option extends Kanban_Db
 
 		return FALSE;
 	}
-
 
 
 	static function enqueue_js($hook)
@@ -225,7 +217,6 @@ class Kanban_Option extends Kanban_Db
 	}
 
 
-
 	static function settings_page()
 	{
 		$settings = Kanban_Option::get_all();
@@ -251,7 +242,6 @@ class Kanban_Option extends Kanban_Db
 
 		include_once $template;
 	}
-
 
 
 	static function save_settings ()
@@ -416,7 +406,6 @@ class Kanban_Option extends Kanban_Db
 	}
 
 
-
 	/**
 	 * get the instance of this class
 	 * @return	object	the instance
@@ -429,7 +418,6 @@ class Kanban_Option extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
