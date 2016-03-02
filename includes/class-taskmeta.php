@@ -66,7 +66,6 @@ class Kanban_Taskmeta extends Kanban_Db
 	}
 
 
-
 	// define the db schema
 	static function db_table ()
 	{
