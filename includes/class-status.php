@@ -34,7 +34,6 @@ class Kanban_Status extends Kanban_Db
 	}
 
 
-
 	static function get_all ($sql = NULL)
 	{
 		$table_name = self::table_name();
@@ -60,7 +59,6 @@ class Kanban_Status extends Kanban_Db
 	}
 
 
-
 	// define the db schema
 	static function db_table ()
 	{
@@ -84,7 +82,6 @@ class Kanban_Status extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function delete ($where)
 	{
@@ -92,13 +89,11 @@ class Kanban_Status extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function insert_id ()
 	{
 		return self::_insert_id();
 	}
-
 
 
 	/**
@@ -113,7 +108,6 @@ class Kanban_Status extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
