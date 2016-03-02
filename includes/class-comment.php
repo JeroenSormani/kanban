@@ -42,7 +42,6 @@ class Kanban_Comment extends Kanban_Db
 	}
 
 
-
 	static function add ($comment, $type = 'system', $task_id = 0, $user_id_author = NULL)
 	{
 
@@ -81,13 +80,11 @@ class Kanban_Comment extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function insert ($data)
 	{
 		return self::_insert($data);
 	}
-
 
 
 	static function get_all ($sql = NULL)
@@ -107,8 +104,6 @@ class Kanban_Comment extends Kanban_Db
 			Kanban_Utils::build_array_with_id_keys ($records, 'id')
 		);
 	}
-
-
 
 
 	// define the db schema
@@ -140,7 +135,6 @@ class Kanban_Comment extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
