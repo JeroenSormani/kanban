@@ -109,7 +109,6 @@ class Kanban_Status_Change extends Kanban_Db
 	}
 
 
-
 	// define the db schema
 	static function db_table ()
 	{
@@ -138,7 +137,6 @@ class Kanban_Status_Change extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**

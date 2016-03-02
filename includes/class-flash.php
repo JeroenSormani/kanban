@@ -76,12 +76,12 @@ class Kanban_Flash
 	}
 
 
-
 	static function clear ()
 	{
 		unset($_SESSION[self::$namespace]);
 		unset($_SESSION[self::$namespace.'_class']);
 	}
+
 
 }
 

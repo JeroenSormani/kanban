@@ -107,7 +107,6 @@ class Kanban
 	}
 
 
-
 	static function on_activation()
 	{
 		// check for db updates and migration
@@ -142,7 +141,6 @@ class Kanban
 	}
 
 
-
 	/**
 	 * friendly notice about php version requirement
 	 */
@@ -165,7 +163,6 @@ class Kanban
 	}
 
 
-
 	/**
 	 * get the instance of this class
 	 * @return	object	the instance
@@ -178,7 +175,6 @@ class Kanban
 		}
 		return self::$instance;
 	}
-
 
 
 	/**

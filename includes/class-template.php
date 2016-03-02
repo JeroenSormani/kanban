@@ -62,7 +62,6 @@ class Kanban_Template
 	}
 
 
-
 	/**
 	 * make sure only authenticated users can see our pages
 	 */
@@ -120,7 +119,6 @@ class Kanban_Template
 		wp_redirect(sprintf('%s/%s/login', site_url(), Kanban::$slug));
 		exit;
 	}
-
 
 
 	/**
@@ -202,7 +200,6 @@ class Kanban_Template
 	}
 
 
-
 	/**
 	 * higherarchy of template locations, to allow for customization
 	 * @param  string $basename filename of the template we're looking for
@@ -240,7 +237,6 @@ class Kanban_Template
 
 		return apply_filters( 'kanban_template_find_template_return', $template );
 	}
-
 
 
 	/**
@@ -285,7 +281,6 @@ class Kanban_Template
 	}
 
 
-
 	/**
 	 * add a js script to a kanban template, without using the WordPress queue
 	 */
@@ -305,7 +300,6 @@ class Kanban_Template
 	}
 
 
-
 	/**
 	 * get the instance of this class
 	 * @return	object	the instance
@@ -318,7 +312,6 @@ class Kanban_Template
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
