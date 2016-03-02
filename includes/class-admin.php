@@ -52,7 +52,6 @@ class Kanban_Admin
 	}
 
 
-
 	/**
 	 * show upgrade notice with progress bar
 	 */
@@ -257,7 +256,6 @@ class Kanban_Admin
 	}
 
 
-
 	/**
 	 * render the welcome page
 	 */
@@ -316,7 +314,6 @@ class Kanban_Admin
 	}
 
 
-
 	/**
 	 * render the welcome page
 	 */
@@ -326,7 +323,6 @@ class Kanban_Admin
 
 		include_once $template;
 	}
-
 
 
 	static function contact_support()
@@ -354,7 +350,6 @@ class Kanban_Admin
 			$_GET['alert'] = "Email could not be sent. Please contact us through <a href=\"http://kanbanwp.com\" target=\"_blank\">https://kanbanwp.com</a>.";	
 		}
 	}
-
 
 
 	/**
@@ -433,7 +428,6 @@ class Kanban_Admin
 	}
 
 
-
 	// add the settings page link on the plugins page
 	static function add_plugin_settings_link( $links )
 	{
@@ -453,7 +447,6 @@ class Kanban_Admin
 
 		return array_merge( $links, $mylinks );
 	}
-
 
 
 	// redirect to welcome page
@@ -488,7 +481,6 @@ class Kanban_Admin
 	}
 
 
-
 	/**
 	 * get the instance of this class
 	 * @return	object	the instance
@@ -501,7 +493,6 @@ class Kanban_Admin
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
