@@ -15,7 +15,6 @@ class Kanban_Utils
 	}
 
 
-
 	static function build_array_with_id_keys ($arr, $id_key = 'id')
 	{
 		$return = array();
@@ -31,12 +30,10 @@ class Kanban_Utils
 	}
 
 
-
 	static function make_word_plural ($word)
 	{
 		return substr($word, -1) == 's' ? sprintf(__('%ses', 'kanban'), $word) : sprintf(__('%ss', 'kanban'), $word);
 	}
-
 
 
 	// http://stackoverflow.com/a/17694792/38241
@@ -53,7 +50,6 @@ class Kanban_Utils
 
 		return FALSE;
 	}
-
 
 
 	static function order_array_of_objects_by_property ($arr, $property, $cmp_type = 'str')
@@ -90,18 +86,18 @@ class Kanban_Utils
 	}
 
 
-
 	static function mysql_now_gmt ()
 	{
 		return gmdate('Y-m-d H:i:s');
 	}
 
 
-
 	static function str_for_frontend ($str)
 	{
 			return htmlentities(stripcslashes(stripcslashes(stripcslashes($str))), ENT_QUOTES);
 	}
+
+
 }
 
 
