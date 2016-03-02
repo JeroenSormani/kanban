@@ -25,7 +25,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	private static function _fetch_sql( $key, $value )
 	{
 		global $wpdb;
@@ -40,14 +39,11 @@ abstract class Kanban_Db
 	}
 
 
-
 	protected static function get_row ( $key, $value )
 	{
 		global $wpdb;
 		return $wpdb->get_row( self::_fetch_sql( $key, $value ) );
 	}
-
-
 
 
 	protected static function get_all ($sql)
@@ -57,8 +53,6 @@ abstract class Kanban_Db
 
 		return $records;
 	}
-
-
 
 
 	protected static function _replace ($data)
@@ -81,7 +75,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	protected static function _insert( $data )
 	{
 		$data = self::sanitize_data($data);
@@ -91,7 +84,6 @@ abstract class Kanban_Db
 
 		return $success;
 	}
-
 
 
 	protected static function _update( $data, $where )
@@ -105,13 +97,11 @@ abstract class Kanban_Db
 	}
 
 
-
 	protected static function _delete( $where )
 	{
 		global $wpdb;
 		$success = $wpdb->delete( static::table_name(), $where );
 	}
-
 
 
 	// get last inserted id
@@ -122,12 +112,10 @@ abstract class Kanban_Db
 	}
 
 
-
 	static function time_to_date( $time )
 	{
 		return gmdate( 'Y-m-d H:i:s', $time );
 	}
-
 
 
 	static function now()
@@ -136,19 +124,16 @@ abstract class Kanban_Db
 	}
 
 
-
 	static function date_to_time( $date )
 	{
 		return strtotime( $date . ' GMT' );
 	}
 
 
-
 	public static function table_name()
 	{
 		return Kanban_Db::format_table_name(static::$table_name);
 	}
-
 
 
 	static function sanitize_data ($data)
@@ -248,7 +233,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	/**
 	 * [check_for_updates description]
 	 * @link http://mac-blog.org.ua/wordpress-custom-database-table-example-full/
@@ -336,7 +320,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	static function migrate_records_remaining ()
 	{
 		global $wpdb;
@@ -354,7 +337,6 @@ abstract class Kanban_Db
 
 		return $count;
 	}
-
 
 
 	/**
@@ -956,7 +938,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	static function add_defaults ()
 	{
 		global $wpdb;
@@ -1148,7 +1129,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	/**
 	 * build the table name with "namespacing"
 	 * @param  string $table the classname for the table
@@ -1167,7 +1147,6 @@ abstract class Kanban_Db
 	}
 
 
-
 	/**
 	 * get the instance of this class
 	 * @return	object	the instance
@@ -1180,7 +1159,6 @@ abstract class Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
