@@ -34,7 +34,6 @@ class Kanban_Estimate extends Kanban_Db
 	}
 
 
-
 	static function get_all ($sql = NULL)
 	{
 		$table_name = self::table_name();
@@ -55,13 +54,11 @@ class Kanban_Estimate extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function replace ($data)
 	{
 		return self::_replace($data);
 	}
-
 
 
 	// extend parent, so it's accessible from other classes
@@ -71,13 +68,11 @@ class Kanban_Estimate extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function insert_id ()
 	{
 		return self::_insert_id();
 	}
-
 
 
 	// define the db schema
@@ -108,7 +103,6 @@ class Kanban_Estimate extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
