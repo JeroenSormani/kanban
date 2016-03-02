@@ -41,7 +41,6 @@ class Kanban_Project extends Kanban_Db
 	}
 
 
-
 	static function ajax_save ()
 	{
 		if (  !isset( $_POST[Kanban_Utils::get_nonce()] ) || ! wp_verify_nonce( $_POST[Kanban_Utils::get_nonce()], 'kanban-save') || !is_user_logged_in() ) wp_send_json_error();
@@ -99,7 +98,6 @@ class Kanban_Project extends Kanban_Db
 	}
 
 
-
 	static function ajax_delete ()
 	{
 		if (  !isset( $_POST[Kanban_Utils::get_nonce()] ) || ! wp_verify_nonce( $_POST[Kanban_Utils::get_nonce()], 'kanban-save') || !is_user_logged_in() ) wp_send_json_error();
@@ -133,13 +131,11 @@ class Kanban_Project extends Kanban_Db
 	}
 
 
-
 	// extend parent, so it's accessible from other classes
 	static function replace ($data)
 	{
 		return self::_replace($data);
 	}
-
 
 
 	protected static function delete ($id)
@@ -149,7 +145,6 @@ class Kanban_Project extends Kanban_Db
 			array('id' => $id)
 		);
 	}
-
 
 
 	static function get_all ($sql = NULL)
@@ -185,7 +180,6 @@ class Kanban_Project extends Kanban_Db
 	}
 
 
-
 	// define the db schema
 	static function db_table ()
 	{
@@ -217,7 +211,6 @@ class Kanban_Project extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
