@@ -49,7 +49,6 @@ class Kanban_Board extends Kanban_Db
 	}
 
 
-
 	/**
 	 * load data needed for board's javascript
 	 * @param  string $template the passed in template path
@@ -133,7 +132,6 @@ class Kanban_Board extends Kanban_Db
 	}
 
 
-
 	static function render_js_templates ()
 	{
 		// Automatically load router files
@@ -154,13 +152,11 @@ class Kanban_Board extends Kanban_Db
 	}
 
 
-
 	// extend parent replace, so it's accessible from other classes
 	static function replace ($data)
 	{
 		return self::_replace($data);
 	}
-
 
 
 	// define the db schema
@@ -193,7 +189,6 @@ class Kanban_Board extends Kanban_Db
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
