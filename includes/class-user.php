@@ -25,7 +25,6 @@ class Kanban_User
 	}
 
 
-
 	/**
 	 * if a logged in user sees the log in page, and requets access to the kanban board
 	 * sends an email to the site admin
@@ -79,7 +78,6 @@ class Kanban_User
 		wp_redirect($_POST['_wp_http_referer']);
 		exit;
 	}
-
 
 
 	/**
@@ -235,7 +233,6 @@ class Kanban_User
 	}
 
 
-
 	/**
 	 * build a formatted name for a WordPress user
 	 * @param  object  $user  a WordPress user object
@@ -252,7 +249,6 @@ class Kanban_User
 			return $user->user_email;
 		}
 	}
-
 
 
 	/**
@@ -273,7 +269,6 @@ class Kanban_User
 			return $username;
 		}
 	}
-
 
 
 	/**
@@ -298,7 +293,6 @@ class Kanban_User
 
 		return strtoupper($initials);
 	}
-
 
 
 	/**
@@ -364,7 +358,6 @@ class Kanban_User
 	}
 
 
-
 	/**
 	 * get the instance of this class
 	 * @return	object	the instance
@@ -377,7 +370,6 @@ class Kanban_User
 		}
 		return self::$instance;
 	}
-
 
 
 	/**
