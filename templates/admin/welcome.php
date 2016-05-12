@@ -9,16 +9,16 @@
 
 
 
-	<?php if ( isset($_GET['activation']) ) : ?>
+	<?php if ( isset( $_GET['activation'] ) ) : ?>
 		<div class="updated notice is-dismissible kanban-welcome-notice">
-			<p><?php echo __('Thanks for using Kanban for WordPress!', 'kanban') ?></p>
+			<p><?php echo __( 'Thanks for using Kanban for WordPress!', 'kanban' ); ?></p>
 		</div>
 		<script>
 			jQuery( document.body ).on( 'click', '.kanban-welcome-notice .notice-dismiss', function() {
 				window.history.replaceState('Object', 'Title', '<?php echo esc_url( admin_url( 'admin.php?page=kanban_welcome' ) ); ?>' );
 			});
 		</script>
-	<?php endif ?>
+	<?php endif; ?>
 
 
 
@@ -42,8 +42,8 @@
 										<?php echo __( 'Documentation', 'kanban' ); ?>
 										<?php echo __( '(On kanbanwp.com)', 'kanban' ); ?>
 									</a>
-									<a href="<?php echo admin_url('admin.php?page=kanban_settings'); ?>" class="button">Settings</a>
-									<a href="<?php echo admin_url('admin.php?page=kanban_contact'); ?>" class="button">Contact us</a>
+									<a href="<?php echo admin_url( 'admin.php?page=kanban_settings' ); ?>" class="button">Settings</a>
+									<a href="<?php echo admin_url( 'admin.php?page=kanban_contact' ); ?>" class="button">Contact us</a>
 								</p>
 							</div>
 
