@@ -145,7 +145,7 @@ class Kanban_Board extends Kanban_Db
 		);
 
 		foreach ( $js_templates as $js_template ) : ?>
-		<script type="text/html" id="<?php echo basename($js_template, '.php'); ?>">
+		<script type="text/html" id="<?php echo basename( $js_template, '.php' ); ?>">
 
 		<?php include $js_template; ?>
 
