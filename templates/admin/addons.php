@@ -22,7 +22,7 @@
 				<img src="<?php echo $addon->post_img; ?>">
 <?php else: // post_img ?>
 				<h3><?php echo $addon->post_title; ?></h3>
-<?php endif // post_img ?>
+<?php endif; // post_img ?>
 			</div><!-- header -->
 			<div class="addon-body">
 				<p>
@@ -35,7 +35,7 @@
 				</p>
 			</div><!-- body -->
 		</div>
-<?php endforeach ?>
+<?php endforeach; ?>
 	</div><!-- addons -->
 
 <?php else : // addons ?>
@@ -47,7 +47,7 @@
 			<?php echo __( 'Check out our add-ons on KanbanWP.com', 'kanban' ); ?>
 		</a>
 	</p>
-<?php endif // addons ?>
+<?php endif; // addons ?>
 </div><!-- wrap -->
 
 
