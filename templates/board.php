@@ -35,9 +35,9 @@ include Kanban_Template::find_template( 'inc/header' ); ?>
 
 
 <script type="text/javascript">
-var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
+var ajaxurl = '<?php echo admin_url( 'admin-ajax.php' ); ?>';
 
-var alert = "<?php echo addslashes($wp_query->query_vars['kanban']->board->alert); ?>";
+var alert = "<?php echo addslashes( $wp_query->query_vars['kanban']->board->alert ); ?>";
 
 var board = {
 	settings: function ()
@@ -78,7 +78,7 @@ var sidebar_w = <?php echo $wp_query->query_vars['kanban']->board->sidebar_w ?>;
 
 #row-tasks, #row-statuses {
 	left: -<?php echo $wp_query->query_vars['kanban']->board->sidebar_w ?>%;
-	width: <?php echo 100+($wp_query->query_vars['kanban']->board->sidebar_w*2) ?>%;
+	width: <?php echo 100+($wp_query->query_vars['kanban']->board->sidebar_w*2); ?>%;
 }
 </style>
 
