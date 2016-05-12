@@ -103,7 +103,7 @@ class Kanban_Template
 
 
 		// allow for addition checks
-		$can_view = apply_filters ( 'kanban_template_protect_slug_check', FALSE );
+		$can_view = apply_filters( 'kanban_template_protect_slug_check', FALSE );
 
 
 
