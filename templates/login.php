@@ -23,13 +23,13 @@
 					<label for="email" class="sr-only">
 						<?php echo __( 'Email or username', 'kanban' ); ?>
 					</label>
-					<input type="text" name="email" id="email" class="form-control input-lg" placeholder="<?php echo __('Email or username', 'kanban'); ?>" required autofocus>
+					<input type="text" name="email" id="email" class="form-control input-lg" placeholder="<?php echo __( 'Email or username', 'kanban' ); ?>" required autofocus>
 				</div><!-- form group -->
 				<div class="form-group">
 					<label for="password" class="sr-only">
 						<?php echo __( 'Password', 'kanban' ); ?>
 					</label>
-					<input type="password" name="password" id="password" class="form-control input-lg" placeholder="<?php echo __('Password', 'kanban'); ?>" required>
+					<input type="password" name="password" id="password" class="form-control input-lg" placeholder="<?php echo __( 'Password', 'kanban' ); ?>" required>
 				</div><!-- form group -->
 				<div>
 					<button type="submit" class="btn btn-lg btn-primary btn-block">
@@ -47,7 +47,7 @@
 					</button>
 					<?php wp_nonce_field( 'request_access', Kanban_Utils::get_nonce() ); ?>
 				</p>
-<?php endif // is_user_logged_in ?>
+<?php endif; // is_user_logged_in ?>
 			</div><!-- panel-body -->
 		</div><!-- panel -->
 	</form>
@@ -58,4 +58,4 @@
 
 
 
-<?php include Kanban_Template::find_template( 'inc/footer' )
+<?php include Kanban_Template::find_template( 'inc/footer' );
