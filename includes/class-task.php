@@ -56,7 +56,7 @@ class Kanban_Task extends Kanban_Db
 
 		if ( $hours < 1 )
 		{
-			$label = sprintf( '%sm', ceil( $hours*60/100));
+			$label = sprintf( '%sm', ceil( $hours*60/100 ) );
 		}
 		elseif ( $hours < 8 )
 		{
@@ -152,7 +152,7 @@ class Kanban_Task extends Kanban_Db
 		if ( $is_successful )
 		{
 			wp_send_json_success( array(
-				'message' => sprintf( '%s saved', self::$slug ),
+				'message'   => sprintf( '%s saved', self::$slug ),
 				self::$slug => $post_data
 			) );
 		}
@@ -279,7 +279,7 @@ class Kanban_Task extends Kanban_Db
 
 		return apply_filters(
 			'kanban_task_get_all_return',
-			Kanban_Utils::build_array_with_id_keys ( $records, 'id' )
+			Kanban_Utils::build_array_with_id_keys( $records, 'id' )
 		);
 	}
 

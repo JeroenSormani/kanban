@@ -47,7 +47,7 @@
 
 
 	<div class="form-inline" id="search-wrapper">
-		<input type="search" id="board-search" class="form-control" placeholder="<?php echo __('Search', 'kanban'); ?>">
+		<input type="search" id="board-search" class="form-control" placeholder="<?php echo __( 'Search', 'kanban' ); ?>">
 		<button type="button" class="btn btn-warning" id="board-search-reset" style="display: none;">
 			<?php echo __( 'Show All', 'kanban' ); ?>
 		</button>
@@ -69,10 +69,10 @@
 
 
 <?php if ( in_array( 'write', $wp_query->query_vars['kanban']->board->current_user->caps ) ) : ?>
-	<a href="<?php echo admin_url( sprintf('admin.php?page=%s_settings', Kanban::$instance->settings->basename) ); ?>" class="btn btn-default" target="_blank">
+	<a href="<?php echo admin_url( sprintf( 'admin.php?page=%s_settings', Kanban::$instance->settings->basename ) ); ?>" class="btn btn-default" target="_blank">
 		<?php echo __( 'Settings', 'kanban' ); ?>
 	</a>
-<?php endif ?>
+<?php endif; ?>
 
 
 </div><!-- footer -->

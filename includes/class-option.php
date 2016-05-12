@@ -242,10 +242,10 @@ class Kanban_Option extends Kanban_Db
 		}
 
 		$statuses = Kanban_Status::get_all();
-		$statuses = Kanban_Utils::order_array_of_objects_by_property ( $statuses, 'position', 'int' );
+		$statuses = Kanban_Utils::order_array_of_objects_by_property( $statuses, 'position', 'int' );
 
 		$estimates = Kanban_Estimate::get_all();
-		$estimates = Kanban_Utils::order_array_of_objects_by_property ( $estimates, 'position', 'int' );
+		$estimates = Kanban_Utils::order_array_of_objects_by_property( $estimates, 'position', 'int' );
 
 		$template = Kanban_Template::find_template( 'admin/settings' );
 
@@ -392,7 +392,7 @@ class Kanban_Option extends Kanban_Db
 			);
 
 			// see if it's already set
-			$id = Kanban_Utils::find_key_of_object_by_property ( 'name', $key, $settings );
+			$id = Kanban_Utils::find_key_of_object_by_property( 'name', $key, $settings );
 
 			if ( $id )
 			{

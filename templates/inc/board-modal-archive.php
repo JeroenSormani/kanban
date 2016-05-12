@@ -2,7 +2,7 @@
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-body">
-				<p class="lead text-center" id="empty-archive-confirmation-label" data-label="<?php echo __('Delete all tasks in &quot;{0}&quot;?', 'kanban'); ?>">
+				<p class="lead text-center" id="empty-archive-confirmation-label" data-label="<?php echo __( 'Delete all tasks in &quot;{0}&quot;?', 'kanban' ); ?>">
 				</p>
 				<p class="text-center">
 					<button type="button" class="btn btn-default" id="btn-empty-status-tasks-cancel" data-dismiss="modal">
