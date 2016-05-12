@@ -50,7 +50,7 @@ class Kanban_User
 					'kanban'
 					),
 				Kanban::get_instance()->settings->pretty_name,
-				Kanban_User::get_username_long ( $current_user )
+				Kanban_User::get_username_long( $current_user )
 			),
 			sprintf(
 				__(
@@ -60,7 +60,7 @@ class Kanban_User
 					. '%s' . '\n'
 					. 'And select them as an allowed user.', 'kanban'
 				),
-				Kanban_User::get_username_long ( $current_user ),
+				Kanban_User::get_username_long( $current_user ),
 				admin_url( 'admin.php?page=' . Kanban::get_instance()->settings->basename )
 			),
 			$headers
@@ -68,7 +68,7 @@ class Kanban_User
 
 
 
-		Kanban_Flash::flash (
+		Kanban_Flash::flash(
 			__( 'Your request has been sent.', 'kanban' ),
 			'success'
 		);
@@ -96,7 +96,7 @@ class Kanban_User
 
 			if ( empty( $user ) )
 			{
-				Kanban_Flash::flash (
+				Kanban_Flash::flash(
 					__( 'Whoops! We can\'t find an account for that email address.', 'kanban' ),
 					'danger'
 				);
@@ -111,7 +111,7 @@ class Kanban_User
 
 			if ( empty( $user ) )
 			{
-				Kanban_Flash::flash (
+				Kanban_Flash::flash(
 					__( 'Whoops! We can\'t find an account for that username.', 'kanban' ),
 					'danger'
 				);
@@ -134,7 +134,7 @@ class Kanban_User
 
 		if ( is_wp_error( $user ) )
 		{
-			Kanban_Flash::flash (
+			Kanban_Flash::flash(
 				__( 'Whoops! That password is incorrect for this email address.', 'kanban' ),
 				'danger'
 			);
@@ -224,9 +224,9 @@ class Kanban_User
 				}
 
 				// fancy name formating
-				Kanban_User::get_instance()->allowed_users[$user_id]->long_name_email = Kanban_User::get_username_long ( $user );
-				Kanban_User::get_instance()->allowed_users[$user_id]->short_name = Kanban_User::get_username_short ( $user, TRUE );
-				Kanban_User::get_instance()->allowed_users[$user_id]->initials = Kanban_User::get_initials ( $user );
+				Kanban_User::get_instance()->allowed_users[$user_id]->long_name_email = Kanban_User::get_username_long( $user );
+				Kanban_User::get_instance()->allowed_users[$user_id]->short_name = Kanban_User::get_username_short( $user, TRUE );
+				Kanban_User::get_instance()->allowed_users[$user_id]->initials = Kanban_User::get_initials( $user );
 			}
 		}
 
@@ -352,7 +352,7 @@ class Kanban_User
 			} else {
 				$data = $response['response']['code'];
 			}
-			wp_cache_set( $hashkey, $data, $group = '', $expire = 60*5);
+			wp_cache_set( $hashkey, $data, $group = '', $expire = 60*5 );
 
 		}
 		if ( $data == '200' ){
