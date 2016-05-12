@@ -50,7 +50,7 @@ class Kanban_Estimate extends Kanban_Db
 
 		return apply_filters(
 			'kanban_estimate_get_all_return',
-			Kanban_Utils::build_array_with_id_keys ( $records, 'id' )
+			Kanban_Utils::build_array_with_id_keys( $records, 'id' )
 		);
 	}
 
