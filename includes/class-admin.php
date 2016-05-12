@@ -359,7 +359,7 @@ class Kanban_Admin
 
 	/**
 	 * add pages to admin menu, including custom icon
-	 * @return   [type] [description]
+	 * @return [type] [description]
 	 */
 	static function admin_menu()
 	{
