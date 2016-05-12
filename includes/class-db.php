@@ -252,7 +252,7 @@ abstract class Kanban_Db
 	/**
 	 * [check_for_updates description]
 	 * @link http://mac-blog.org.ua/wordpress-custom-database-table-example-full/
-	 * @return   [type] [description]
+	 * @return [type] [description]
 	 */
 	static function check_for_updates()
 	{
@@ -366,7 +366,7 @@ abstract class Kanban_Db
 	 * delete projects
 	 * delete terms
 	 * clean up
-	 * @return   [type] [description]
+	 * @return [type] [description]
 	 */
 	static function ajax_migrate_records()
 	{
@@ -557,7 +557,7 @@ abstract class Kanban_Db
 
 				if ( $success )
 				{
-					$wpdb->update (
+					$wpdb->update(
 						"{$wpdb->prefix}posts",
 						array( 'post_status' => 'trash' ),
 						array( 'ID' => $post->id )
@@ -753,7 +753,7 @@ abstract class Kanban_Db
 
 				if ( $success )
 				{
-					$wpdb->update (
+					$wpdb->update(
 						"{$wpdb->prefix}posts",
 						array( 'post_status' => 'trash' ),
 						array( 'ID' => $post->id )
@@ -796,7 +796,7 @@ abstract class Kanban_Db
 						// mark as trash
 						if ( $success )
 						{
-							$wpdb->update (
+							$wpdb->update(
 								"{$wpdb->prefix}posts",
 								array( 'post_status' => 'trash' ),
 								array( 'ID' => $comment->ID )
@@ -906,7 +906,7 @@ abstract class Kanban_Db
 
 
 		// cleanup records
-		$wpdb->update (
+		$wpdb->update(
 			"{$wpdb->prefix}posts",
 			array( 'post_status' => 'trash' ),
 			array(
@@ -915,7 +915,7 @@ abstract class Kanban_Db
 			)
 		);
 
-		$wpdb->update (
+		$wpdb->update(
 			"{$wpdb->prefix}posts",
 			array( 'post_status' => 'trash' ),
 			array(
@@ -924,7 +924,7 @@ abstract class Kanban_Db
 			)
 		);
 
-		$wpdb->update (
+		$wpdb->update(
 			"{$wpdb->prefix}posts",
 			array( 'post_status' => 'trash' ),
 			array(
